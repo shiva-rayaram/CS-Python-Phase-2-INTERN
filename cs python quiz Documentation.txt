@@ -1,0 +1,55 @@
+Documentation Report: Tkinter-Based Quiz Application
+
+
+Project Overview
+This project involves the development of a quiz application using Python and the Tkinter GUI framework. The application presents a series of questions to the user, allowing them to select answers from given options. The user's score is updated based on their answers.
+
+Technical Stack
+
+
+Programming Language: Python
+GUI Framework: Tkinter
+
+
+Classes and Key Components
+1. Question Class
+Description
+Represents a single quiz question.
+Attributes:
+question: A string containing the question text.
+options: A list of possible answers.
+correct_answer: The correct answer to the question.
+
+
+2. QuizApplication Class
+Description
+Manages the overall quiz application.
+Attributes:
+root: The main Tkinter window.
+questions: A list of Question objects.
+current_question: Index of the current question being displayed.
+score: The user's current score.
+correct_answers: Number of correctly answered questions.
+
+
+Key Methods
+setup_ui(): Sets up the user interface.
+create_questions(): Initializes the list of questions.
+display_question(question): Displays the current question and its options.
+next_question(): Loads the next question or ends the quiz.
+check_answer(): Checks the selected answer and updates the score.
+
+
+User Interface
+The application features a simple and intuitive interface with a question display area, multiple-choice buttons for answers, and a score display.
+Methodology
+
+Initialization: On application start, the main function creates a Tkinter window and an instance of QuizApplication.
+Question Loading: The create_questions method initializes a set of predefined questions.
+UI Setup: The setup_ui method creates UI elements like the question label, option buttons, and score label.
+
+Quiz Progression: The user interacts with the application by selecting answers. The check_answer method validates the responses, updates the score, and calls next_question to proceed.
+Completion: Once all questions are answered, the application displays the final score and ends the quiz.
+
+Conclusion
+This Tkinter-based quiz application demonstrates a straightforward implementation of a GUI application in Python. It showcases basic principles of GUI design, event handling, and object-oriented programming.
